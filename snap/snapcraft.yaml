@@ -1,0 +1,23 @@
+name: ddsol-speedtest
+version: 1.5.1-1
+summary: node.js SpeedTest.net client module
+description: |
+    The whole speed test runs automatically. It shows the test server,
+    ping time, download speed and upload speed nicely on your console.
+
+    Run the program with `ddsol-speedtest`. You can specify a proxy
+    with the --proxy argument.
+
+grade: stable
+confinement: strict
+
+apps:
+  ddsol-speedtest:
+    command: speedtest-net
+
+parts:
+  speedtest:
+    plugin: nodejs
+    source: https://github.com/ddsol/speedtest.net/archive/v1.5.1.tar.gz
+    node-packages:
+      - speedtest-net
