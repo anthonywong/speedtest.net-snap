@@ -14,6 +14,7 @@ confinement: strict
 apps:
   ddsol-speedtest:
     command: speedtest-net
+    plugs: [network]
 
 parts:
   speedtest:
