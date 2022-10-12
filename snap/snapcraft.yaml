@@ -1,5 +1,5 @@
 name: ddsol-speedtest
-version: 1.5.1-1
+version: 2.2.0-1
 summary: node.js SpeedTest.net client module
 description: |
     The whole speed test runs automatically. It shows the test server,
@@ -19,6 +19,6 @@ apps:
 parts:
   speedtest:
     plugin: nodejs
-    source: https://github.com/ddsol/speedtest.net/archive/v1.5.1.tar.gz
+    source: https://github.com/ddsol/speedtest.net/archive/refs/tags/v2.2.0.tar.gz
     node-packages:
       - speedtest-net
